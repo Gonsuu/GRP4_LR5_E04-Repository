@@ -1,0 +1,23 @@
+INSERT INTO Renters (FirstName, MiddleInitial, LastName, Address, City, State, PostalCode, TelephoneNumber, Email)
+VALUES 
+('John', 'A', 'Doe', '123 Main St', 'Orlando', 'FL', '32801', '407-555-1234', 'john.doe@example.com'),
+('Jane', 'B', 'Smith', '456 Oak Ave', 'Miami', 'FL', '33101', '305-555-5678', 'jane.smith@example.com'),
+('Michael', 'C', 'Brown', '789 Pine Dr', 'Tampa', 'FL', '33601', '813-555-2468', 'michael.brown@example.com'),
+('Sarah', 'D', 'Johnson', '321 Maple Ln', 'Jacksonville', 'FL', '32201', '904-555-3698', 'sarah.johnson@example.com'),
+('Emily', 'E', 'Davis', '654 Birch Rd', 'Naples', 'FL', '34101', '239-555-7890', 'emily.davis@example.com');
+
+INSERT INTO Property (LocationNumber, LocationName, Address, City, State, PostalCode, CondoUnitNumber, SquareFootage, Bedrooms, Bathrooms, MaxOccupants, BaseWeeklyRate)
+VALUES 
+('L001', 'Beachfront Escape', '100 Ocean Blvd', 'Miami', 'FL', '33101', 'A101', 1200, 2, 2, 6, 1500.00),
+('L002', 'City View Condo', '200 Downtown St', 'Orlando', 'FL', '32801', 'B202', 900, 1, 1, 4, 1200.00),
+('L003', 'Golf Retreat', '300 Fairway Dr', 'Tampa', 'FL', '33601', 'C303', 1400, 3, 2, 8, 1800.00),
+('L004', 'Lakehouse Villa', '400 Lakeview Rd', 'Naples', 'FL', '34101', 'D404', 1600, 3, 3, 8, 2000.00),
+('L005', 'Sunset Haven', '500 Palm St', 'Jacksonville', 'FL', '32201', 'E505', 1100, 2, 1, 5, 1300.00);
+
+INSERT INTO RentalAgreements (RenterID, PropertyID, StartDate, EndDate, WeeklyRentalAmount)
+VALUES 
+(1, 2, '2024-06-01', '2024-06-08', 1200.00),
+(2, 4, '2024-07-15', '2024-07-22', 2000.00),
+(3, 1, '2024-08-10', '2024-08-17', 1500.00),
+(4, 5, '2024-09-05', '2024-09-12', 1300.00),
+(5, 3, '2024-10-20', '2024-10-27', 1800.00);
